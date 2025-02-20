@@ -28,11 +28,11 @@ function Hero_sec() {
         className="absolute top-5 right-5 w-24 md:w-36"
       />
 
-      <div className="absolute inset-0 flex flex-col gap-6 items-center justify-center px-6 z-10">
-      <h1 className="text-4xl md:text-3xl font-bold bg-gradient-to-r from-cyan-200 to-blue-400 text-transparent bg-clip-text">
+      <div className="absolute inset-0 flex flex-col gap-3 items-center justify-center px-6 z-10">
+      <p className="text-4xl md:text-3xl font-bold bg-gradient-to-r from-cyan-200 to-blue-400 text-transparent bg-clip-text">
           Adani University
-        </h1>
-        <h1 className='text-white text-4xl'>X</h1>
+        </p>
+        <p className='text-white text-2xl'>X</p>
         <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-r from-cyan-200 to-blue-400 text-transparent bg-clip-text">
           AWS Cloud Clubs
         </h1>
