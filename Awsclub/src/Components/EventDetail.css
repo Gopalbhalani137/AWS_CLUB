@@ -1,0 +1,83 @@
+@keyframes gradient {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px) }
+    50% { transform: translateY(-10px) }
+    100% { transform: translateY(0px) }
+  }
+  
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  .hyprgradient {
+    background-image: linear-gradient(to bottom right, #00e6cf, #00c4e3, #0081c6);
+  }
+  
+  
+  
+  /* Regular CSS instead of @apply */
+  :root {
+    --primary: #6366f1;
+    --accent: #22d3ee;
+    --dark: #0f172a;
+    --card: rgba(26, 36, 53, 0.95);
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  .animate-slideIn {
+    animation: slideIn 0.6s ease-out forwards;
+  }
+  
+  /* Updated gradient animation */
+  @keyframes gradient {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+  
+  .aws-gradient-bg {
+    background: linear-gradient(-45deg, 
+    #050F15,    /* AWS dark blue */
+      #083561,    /* Deep blue */
+      #1a2c3d,    /* Medium blue */
+      #00a4e4     /* AWS light blue */
+    );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  .glass-card {
+    background: rgba(35, 47, 62, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+  }

@@ -1,8 +1,8 @@
 import React from 'react';
 
 const EventCard = ({ event }) => (
-  <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
+  <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 ">
+    <a>
       <img
         className=""
         src={event.photo}
@@ -10,7 +10,7 @@ const EventCard = ({ event }) => (
       />
     </a>
     <div className="p-5">
-      <a href="#">
+      <a>
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           {event.chiefGuest}
         </h5>
@@ -22,7 +22,7 @@ const EventCard = ({ event }) => (
         Date: {event.date}
       </p>
       <a
-        href="#"
+        href={`/${event.id}`}
         className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-transparent bg-[#ffffff] rounded-lg "
       >
         Read more

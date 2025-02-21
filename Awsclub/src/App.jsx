@@ -5,6 +5,7 @@ import Navbar from "./Components/NavBar";
 import Section2 from "./Components/Section2";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Events from "./Components/Events";
+import EventDetail from "./Components/EventDetail";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Section2/>
       <Events/>
       </ParallaxProvider>
+      <EventDetail/>
       {/* <Navbar classname="mt-32"/> */}
     </>
   );

@@ -33,9 +33,10 @@ function Hero_sec() {
           Adani University
         </p>
         <p className='text-white text-2xl'>X</p>
-        <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-r from-cyan-200 to-blue-400 text-transparent bg-clip-text">
-          AWS Cloud Clubs
-        </h1>
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold bg-gradient-to-r from-cyan-200 to-blue-400 text-transparent bg-clip-text text-center px-4">
+  AWS Cloud Clubs
+</h1>
+
         <p className="text-white text-lg md:text-xl font-medium text-center leading-relaxed max-w-3xl drop-shadow-md">
           <span className="text-gray-300">
             Empowering Innovation and Elevating Cloud Excellence
