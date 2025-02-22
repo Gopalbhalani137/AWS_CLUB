@@ -4,7 +4,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 export default function Section2() {
   return (
-    <section className="bg-lirelative md:w-full md:h-screen bg-[#040e15]">
+    <section className="bg-li relative md:w-full md:h-screen bg-[#040e15] z-2">
       <Parallax translateY={[-10, 10]}>
         <div className="flex flex-col gap-6 items-center justify-center md:pt-48 md:p-28">
           <center className="text-2xl md:text-6xl font-bold bg-gradient-to-r from-cyan-200 bg-[#78D3E3] text-transparent bg-clip-text pt-12 md:pb-10">

@@ -6,7 +6,7 @@ function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       // Identify the height of the Hero section so we know when the user has scrolled past it
-      const heroHeight = document.getElementById('hero')?.offsetHeight || 0;
+      const heroHeight = 700;
 
       // Once we've scrolled beyond the hero section, show the navbar
       if (window.scrollY >= heroHeight) {
@@ -29,7 +29,9 @@ function Navbar() {
         transition-transform duration-300 
         ${showNavbar ? 'translate-y-0' : '-translate-y-full'}
         flex justify-center items-center h-16
-        bg-black
+        ${window.scrollY>=700 ? 'mt-3' : ''}
+        bg-gradient-to-b from-[#0d1117] to-[#0d1117]
+        bg-opacity-90
       `}
     >
       {/* 
