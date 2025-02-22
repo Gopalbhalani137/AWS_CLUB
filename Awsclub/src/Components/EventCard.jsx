@@ -1,7 +1,14 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const EventCard = ({ event }) => (
-  <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 ">
+  <motion.div
+    className="md:max-w-sm w-72 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+    whileHover={{
+      scale: 1.05,
+      transition: { duration: 0.3, ease: 'easeInOut' },
+    }}
+  >
     <a>
       <img
         className=""
@@ -23,7 +30,7 @@ const EventCard = ({ event }) => (
       </p>
       <a
         href={`/${event.id}`}
-        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-transparent bg-[#ffffff] rounded-lg "
+        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-transparent bg-[#ffffff] rounded-lg"
       >
         Read more
         <svg
@@ -43,7 +50,7 @@ const EventCard = ({ event }) => (
         </svg>
       </a>
     </div>
-  </div>
+  </motion.div>
 );
 
 export default EventCard;

@@ -13,14 +13,14 @@ function App() {
     <>
     {/* <HeroSection/> */}
       {/* <Hero_sec classname="bg-[#20e1b79c]"/> */}
-      {/* <CursorFollower/>
+      <CursorFollower/>
       <ParallaxProvider>
       <Hero_sec/> 
       <Section2/>
       <Events/>
-      </ParallaxProvider> */}
+      </ParallaxProvider>
       {/* <Navbar /> */}
-      <EventDetail/>
+      {/* <EventDetail/> */}
     </>
   );
 }

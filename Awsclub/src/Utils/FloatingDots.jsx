@@ -2,7 +2,7 @@ import React from 'react';
 
 const FloatingDots = () => {
   return (
-    <div className="fixed inset-0 z-0 pointer-events-none">
+    <div className="fixed inset-0 z-10 pointer-events-none">
       {[...Array(50)].map((_, i) => (
         <div
           key={i}
